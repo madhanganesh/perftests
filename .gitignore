@@ -2,6 +2,8 @@
 .metadata
 .classpath
 .project
+data/
+*.class
 **/node_modules/
 **/RemoteSystemsTempFiles/
 **/Servers/
