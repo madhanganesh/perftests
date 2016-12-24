@@ -2,20 +2,22 @@ import time
 
 sum = 0
 start = time.time()
-for e in xrange(30):
+for e in range(30):
     sum = 0
 
-    x = []
-    for i in xrange(1000000):
-        x.append(i)
+    x = [0] * 1000000
+    for i in range(1000000):
+        #x.append(i)
+        x[i] = i
 
-    y = []
-    for i in xrange(1000000 - 1):
-        y.append(x[i] + x[i+1])
+    y = [0] * 1000000
+    for i in range(1000000 - 1):
+        #y.append(x[i] + x[i+1])
+        y[i] = x[i] + x[i+1]
 
-    for i in xrange(0, 1000000,  100):
+    for i in range(0, 1000000,  100):
         sum +=  y[i]
 
 end = time.time()
 print('Elapsed ' + str(end-start))
-print sum
+print(sum)

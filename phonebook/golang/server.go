@@ -3,12 +3,13 @@ package main
 import (
 	"encoding/json"
 	"fmt"
-	"github.com/gorilla/mux"
-	"gopkg.in/mgo.v2/bson"
 	"html"
-	"labix.org/v2/mgo"
 	"log"
 	"net/http"
+
+	"github.com/gorilla/mux"
+	"gopkg.in/mgo.v2/bson"
+	"labix.org/v2/mgo"
 )
 
 var collection *mgo.Collection
@@ -21,7 +22,7 @@ func init() {
 	//defer session.Close()
 	session.SetMode(mgo.Monotonic, true)
 
-	collection = session.DB("test").C("person")
+	collection = session.DB("perftest").C("person")
 }
 
 type Person struct {
