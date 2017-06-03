@@ -8,7 +8,7 @@ import (
 	"time"
 )
 
-func Filter(vs []string, f func(string) bool) []string {
+func filter(vs []string, f func(string) bool) []string {
 	vsf := vs[:0]
 	for _, v := range vs {
 		if f(v) {
@@ -29,14 +29,14 @@ func main() {
 	for scanner.Scan() {
 		names = append(names, scanner.Text())
 	}
+	originalCount := len(names)
 
-	fmt.Println("count is", len(names))
 	start := time.Now()
 
-	names = Filter(names, func(name string) bool { return !strings.Contains(name, "A") })
+	names = filter(names, func(name string) bool { return !strings.Contains(name, "A") })
 
 	elapsed := time.Since(start)
+	fmt.Println("original count is", originalCount)
+	fmt.Println("filtered count is", len(names))
 	fmt.Println(elapsed)
-
-	fmt.Println("count is", len(names))
 }

@@ -3,7 +3,6 @@ var t1 = new Date();
 
 for (var e=0; e<30; e++) {
     var x = [];
-
     for (var i=0; i<1000000; i++) {
         x.push(i);
     }

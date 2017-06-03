@@ -18,14 +18,17 @@ class FilterNames {
 
 
             long startTime = System.currentTimeMillis();
+            int originalSize = names.size();
 
             names.removeIf(n -> n.contains("A"));
 
             long stopTime = System.currentTimeMillis();
             long elapsedTime = stopTime - startTime;
+
+            System.out.println("Original size " + originalSize);
+            System.out.println("Filtered Size " + names.size());
             System.out.println(elapsedTime + " ms");
 
-            System.out.println(names.size());
 
         } catch (Exception e) {
             e.printStackTrace();

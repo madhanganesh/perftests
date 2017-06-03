@@ -15,8 +15,8 @@ for e in range(30):
         #y.append(x[i] + x[i+1])
         y[i] = x[i] + x[i+1]
 
-    for i in range(0, 1000000,  100):
-        sum +=  y[i]
+    for i in range(0, 1000000, 100):
+        sum += y[i]
 
 end = time.time()
 print('Elapsed ' + str(end-start))

@@ -10,14 +10,14 @@ func main() {
 	start := time.Now()
 
 	for e := 0; e < 30; e++ {
-		x := make([]int, 0, 1000000)
+		var x [1000000]int
 		for i := 0; i < 1000000; i++ {
-			x = append(x, i)
+			x[i] = i
 		}
 
-		y := make([]int, 0, 1000000-1)
+		var y [1000000 - 1]int
 		for i := 0; i < 1000000-1; i++ {
-			y = append(y, x[i]+x[i+1])
+			y[i] = x[i] + x[i+1]
 		}
 
 		sum = 0
@@ -28,6 +28,6 @@ func main() {
 
 	elapsed := time.Since(start)
 
-	fmt.Printf("Elapsed (sec) %s\n", elapsed)
+	fmt.Printf("Elapsed %s\n", elapsed)
 	fmt.Println(sum)
 }

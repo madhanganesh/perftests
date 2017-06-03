@@ -9,3 +9,6 @@ data/
 **/Servers/
 **/target/
 **/.settings/
+**/.vscode/
+**/obj/
+**/bin/
