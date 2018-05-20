@@ -15,8 +15,7 @@ class FilterNames {
 
             List<String> names = new ArrayList<>();
             stream.forEach(name -> names.add(name));
-
-
+            
             long startTime = System.currentTimeMillis();
             int originalSize = names.size();
 
