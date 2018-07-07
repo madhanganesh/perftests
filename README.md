@@ -15,7 +15,7 @@ the data folder should be under the root of the project.
 | filter 18 M names  | mac os | go       | 1.8             | 700      | 352       |
 |                    |        | java     | 1.8             | 1024     | 353       |
 |                    |        | dotnet   | 1.0.4(release)  | 600      | 762       |
-|                    |        | node.js  | 8               | 500      | 1748      |
+|                    |        | node.js  | 10              | 500      | 656       |
 |                    |        | python   | 2.7             | 800      | 1600      |
 |                    |        | python   | 3.6             | 1024     | 903       |
 | sum(1 M array)     |        | go       | 1.8             |          | 70        |
