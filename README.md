@@ -4,7 +4,7 @@
 the data files are avilable @ 
 https://drive.google.com/open?id=0B6Tbo6PE8yPeVkFpd2ZXZU5yXzA
 
-get all the files under in the above link to ./data folder
+get all files under in the above link to ./data folder
 so the ./data folder should contain names.txt
 the data folder should be under the root of the project.
 
