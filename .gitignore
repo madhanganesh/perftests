@@ -2,7 +2,9 @@
 .metadata
 .classpath
 .project
+.mvn
 data/
+**/names.txt
 *.class
 **/node_modules/
 **/RemoteSystemsTempFiles/

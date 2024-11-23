@@ -1,0 +1,27 @@
+{
+  "name": "nodejs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "babel": {
+    "presets": [
+      "node7",
+      "stage-0"
+    ]
+  },
+  "dependencies": {
+    "babel-cli": "^6.18.0",
+    "babel-preset-node7": "^1.4.0",
+    "babel-preset-stage-0": "^6.16.0",
+    "bluebird": "^3.4.7",
+    "body-parser": "^1.14.2",
+    "express": "^4.13.3",
+    "mongoose": "^4.3.6"
+  }
+}
