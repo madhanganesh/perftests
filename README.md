@@ -8,7 +8,7 @@ This program reads a large number of lines from a file. It then filters the item
 # Perf numbers
 | Program | Go | Rust |
 |---------|----|------|
-|filter-large-data|115 ms|53ms|
+|filter-large-data|115 ms|53 ms|
 
 
 ## Environment
@@ -29,7 +29,7 @@ get all files under in the above link to ./data folder
 so the ./data folder should contain names.txt
 the data folder should be under the root of the project.
 
-## Run filter-large-data
+## `filter-large-data`
 ### Go
 cd filter-large-data/gofilter
 go build -o target/
@@ -39,9 +39,3 @@ go build -o target/
 cd filter-large-data/gofilter
 cargo build --release
 ./target/release/rustfilter
-
-
-# Performance Results
-## Filter Large Data
-#### Go        - 115.6075 ms
-#### Rust      - 53.096458 ms
