@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block title %}Todos{% endblock %}
+
+{% block content %}
+  <h1 class="text-2xl font-semibold mb-4">Todos</h1>
+  <form method="POST" class="mb-4 flex gap-2">
+    <input type="text" name="title" placeholder="New todo" class="border p-2 rounded w-full" required />
+    <button type="submit" class="bg-blue-500 text-white px-4 py-2 rounded">Add</button>
+  </form>
+  <ul class="space-y-2">
+    {% for todo in todos %}
+      <li class="bg-white p-3 rounded shadow">{{ todo.title }}</li>
+    {% endfor %}
+  </ul>
+{% endblock %}

@@ -1,0 +1,12 @@
+{{ template "base" . }}
+
+{{ define "content" }}
+<h1 class="text-xl font-bold">Todo List</h1>
+<form hx-post="/add" hx-target="#todo-list" hx-swap="beforeend" class="mt-4">
+    <input type="text" name="todo" placeholder="New todo..." class="border p-2" required>
+    <button type="submit" class="bg-blue-500 text-white p-2">Add</button>
+</form>
+<ul id="todo-list" class="mt-4">
+    {{ template "todos" . }}
+</ul>
+{{ end }}

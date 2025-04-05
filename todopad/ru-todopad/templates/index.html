@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1 class="text-xl font-bold mb-4">Todo List</h1>
+
+<form hx-post="/add" hx-target="#todo-list" hx-swap="outerHTML" class="mb-4">
+    <input type="text" name="title" placeholder="New todo..." class="border p-2 w-full">
+    <button type="submit" class="bg-blue-500 text-white px-4 py-2 mt-2">Add</button>
+</form>
+
+<ul id="todo-list">
+    {% for todo in todos %}
+        <li class="border-b py-2">{{ todo.title }}</li>
+    {% else %}
+        <li class="text-gray-500">No todos yet.</li>
+    {% endfor %}
+</ul>
+{% endblock %}

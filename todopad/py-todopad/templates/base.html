@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>{% block title %}Todo App{% endblock %}</title>
+  <script src="https://unpkg.com/htmx.org@1.9.2"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 text-gray-800">
+  <nav class="bg-white shadow p-4 flex justify-between">
+    <div><a href="/" class="text-lg font-bold">Todo App</a></div>
+    <div class="space-x-4">
+      <a href="/todos" class="text-blue-500 hover:underline">Todos</a>
+      <a href="/" class="text-blue-500 hover:underline">About</a>
+    </div>
+  </nav>
+  <main class="p-6">
+    {% block content %}{% endblock %}
+  </main>
+</body>
+</html>

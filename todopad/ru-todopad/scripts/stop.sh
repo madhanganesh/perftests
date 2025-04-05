@@ -1,0 +1,1 @@
+docker stop ru-todopad
