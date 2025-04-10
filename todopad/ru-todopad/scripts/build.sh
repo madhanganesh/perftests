@@ -1,1 +1,1 @@
-docker build -t go-todopad . 
+docker build -t ru-todopad . 
